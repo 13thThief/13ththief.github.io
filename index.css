@@ -1,0 +1,47 @@
+*, :before, :after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Source Sans Pro', 'Georgia', serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #22222b;
+  color: #ccc;
+  min-height: 100%;
+  padding: 10px;
+  margin: auto;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  line-height: 2;
+  background: linear-gradient(to right, #ff8a00, #da1b60);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+@media (max-width: 400px) {
+  p {
+    font-size: 20px;
+  }
+}
+
+a {
+  color: white;
+}
+
+p:hover {
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
